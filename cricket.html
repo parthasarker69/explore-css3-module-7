@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid yellowgreen;
+            height: 600px;
+        }
+
+        .bat {
+            transition: transform 0.05s ease-in;
+        }
+
+        div:hover .bat {
+            transform: rotate(-90deg);
+            transform-origin: 70% 35%;
+        }
+
+        div:hover p {
+            transform: translate(1200px, -200px);
+        }
+
+        p {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50px;
+            position: absolute;
+            left: 550px;
+            bottom: 300px;
+            transition: transform 0.15s ease-out 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="bat" src="images/th.jpeg" alt="Cricket-Bat">
+        <p></p>
+
+    </div>
+</body>
+
+</html>
